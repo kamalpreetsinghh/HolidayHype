@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "102752009253",
+    "project_id": "holidayhype-849e3",
+    "storage_bucket": "holidayhype-849e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102752009253:android:eb2d4bc7a53042e696d3cc",
+        "android_client_info": {
+          "package_name": "com.example.holidayhype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102752009253-df9r0so92er4fp09o17vbaft1ghsmean.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA245UlkRsd9Hr0hnpKYGXjPL-rnhhHOMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102752009253-df9r0so92er4fp09o17vbaft1ghsmean.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

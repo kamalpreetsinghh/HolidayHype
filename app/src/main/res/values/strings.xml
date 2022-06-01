@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Holiday Hype</string>
+    <string name="app_logo">Holiday Hype</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintPassword">Password</string>
+    <string name="buttonLogin">Login</string>
+    <string name="buttonSignup">Sign Up</string>
+    <string name="hintFirstName">First Name</string>
+    <string name="hintLastName">Last Name</string>
+    <string name="hintConfirmPassword">Confirm Password</string>
+    <string name="buttonCreateAccount">Create Account</string>
+</resources>
