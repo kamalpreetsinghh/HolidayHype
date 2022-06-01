@@ -9,4 +9,16 @@
     <string name="hintLastName">Last Name</string>
     <string name="hintConfirmPassword">Confirm Password</string>
     <string name="buttonCreateAccount">Create Account</string>
+    <string name="bottom_nav_attractions"> </string>
+    <string name="bottom_nav_hotels"> </string>
+    <string name="bottom_nav_restaurants"> </string>
+    <string name="bottom_nav_profile"> </string>
+    <string name="attractions_fragment">Attractions fragment</string>
+    <string name="hotels_fragment">Hotels fragment</string>
+    <string name="restaurants_fragment">Restaurants fragment</string>
+    <string name="profile_fragment">Profile fragment</string>
+    <string name="textViewProfileName">Name</string>
+    <string name="textviewProfileEmail">Email</string>
+    <string name="buttonLogout">Logout</string>
+    <string name="profilePicture">Profile Picture</string>
 </resources>
