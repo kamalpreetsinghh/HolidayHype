@@ -1,4 +1,4 @@
-package com.example.holidayhype.views;
+package com.gbc.holidayhype.views;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,10 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.holidayhype.R;
 import com.example.holidayhype.databinding.FragmentProfileBinding;
-import com.example.holidayhype.models.User;
-import com.example.holidayhype.viewmodels.UserViewModel;
+import com.gbc.holidayhype.models.User;
+import com.gbc.holidayhype.viewmodels.UserViewModel;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 

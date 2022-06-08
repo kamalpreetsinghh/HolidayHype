@@ -1,4 +1,4 @@
-package com.example.holidayhype.views;
+package com.gbc.holidayhype.views;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,8 +10,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.holidayhype.databinding.ActivitySignUpBinding;
-import com.example.holidayhype.models.User;
-import com.example.holidayhype.viewmodels.UserViewModel;
+import com.gbc.holidayhype.models.User;
+import com.gbc.holidayhype.viewmodels.UserViewModel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

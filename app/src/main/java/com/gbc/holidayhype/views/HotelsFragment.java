@@ -1,4 +1,4 @@
-package com.example.holidayhype.views;
+package com.gbc.holidayhype.views;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.example.holidayhype.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link RestaurantsFragment#newInstance} factory method to
+ * Use the {@link HotelsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class RestaurantsFragment extends Fragment {
+public class HotelsFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class RestaurantsFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public RestaurantsFragment() {
+    public HotelsFragment() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class RestaurantsFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment RestrauntsFragment.
+     * @return A new instance of fragment HotelsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static RestaurantsFragment newInstance(String param1, String param2) {
-        RestaurantsFragment fragment = new RestaurantsFragment();
+    public static HotelsFragment newInstance(String param1, String param2) {
+        HotelsFragment fragment = new HotelsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class RestaurantsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_restaurants, container, false);
+        return inflater.inflate(R.layout.fragment_hotels, container, false);
     }
 }

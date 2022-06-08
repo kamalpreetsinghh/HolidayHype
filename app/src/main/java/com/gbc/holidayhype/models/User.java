@@ -1,4 +1,4 @@
-package com.example.holidayhype.models;
+package com.gbc.holidayhype.models;
 
 public class User {
     private String userID;

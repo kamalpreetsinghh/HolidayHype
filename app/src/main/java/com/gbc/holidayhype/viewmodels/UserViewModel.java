@@ -1,4 +1,4 @@
-package com.example.holidayhype.viewmodels;
+package com.gbc.holidayhype.viewmodels;
 
 import android.app.Application;
 
@@ -6,8 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.holidayhype.models.User;
-import com.example.holidayhype.repositories.UserRepository;
+import com.gbc.holidayhype.models.User;
+import com.gbc.holidayhype.repositories.UserRepository;
 
 public class UserViewModel extends AndroidViewModel {
 

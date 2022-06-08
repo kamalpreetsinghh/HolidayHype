@@ -1,4 +1,4 @@
-package com.example.holidayhype.views;
+package com.gbc.holidayhype.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;

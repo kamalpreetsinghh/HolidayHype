@@ -1,10 +1,10 @@
-package com.example.holidayhype.repositories;
+package com.gbc.holidayhype.repositories;
 
 import android.util.Log;
 
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.holidayhype.models.User;
+import com.gbc.holidayhype.models.User;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;

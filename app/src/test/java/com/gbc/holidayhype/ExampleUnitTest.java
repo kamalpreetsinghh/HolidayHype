@@ -1,4 +1,4 @@
-package com.example.holidayhype;
+package com.gbc.holidayhype;
 
 import org.junit.Test;
 

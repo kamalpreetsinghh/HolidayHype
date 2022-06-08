@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.holidayhype.views.ProfileFragment"
+        android:name="com.gbc.holidayhype.views.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/attractionsFragment"
-        android:name="com.example.holidayhype.views.AttractionsFragment"
+        android:name="com.gbc.holidayhype.views.AttractionsFragment"
         android:label="fragment_attractions"
         tools:layout="@layout/fragment_attractions" />
     <fragment
         android:id="@+id/hotelsFragment"
-        android:name="com.example.holidayhype.views.HotelsFragment"
+        android:name="com.gbc.holidayhype.views.HotelsFragment"
         android:label="fragment_hotels"
         tools:layout="@layout/fragment_hotels" />
     <fragment
         android:id="@+id/restaurantsFragment"
-        android:name="com.example.holidayhype.views.RestaurantsFragment"
+        android:name="com.gbc.holidayhype.views.RestaurantsFragment"
         android:label="fragment_restaurants"
         tools:layout="@layout/fragment_restaurants" />
 </navigation>

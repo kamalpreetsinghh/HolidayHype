@@ -1,4 +1,4 @@
-package com.example.holidayhype.views;
+package com.gbc.holidayhype.views;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
