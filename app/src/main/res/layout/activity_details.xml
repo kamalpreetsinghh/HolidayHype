@@ -9,7 +9,8 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="270dp"
+        android:scaleType="fitXY"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,16 +27,26 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/myshape"
+        android:layout_marginTop="240dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="230dp">
+
+    </LinearLayout>
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-
-        android:text="Mughal Gardens, Srinagar"
+        android:layout_marginTop="0dp"
+        android:textFontWeight="600"
+        android:text="Calgary,Canada"
         android:textColor="@android:color/background_dark"
-        android:textSize="18sp"
+        android:textSize="35sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -54,7 +65,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="2dp"
-
         android:text="4.5"
         android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
@@ -66,10 +76,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-
-        android:text="Available flight :"
-        android:textColor="#044363"
-        android:textSize="14sp"
+        android:text="Available flight:"
+        android:textColor="#919191"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="800"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -78,9 +89,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-
-        android:text="Price range : "
-        android:textColor="#044363"
+        android:textColor="#919191"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="800"
+        android:text="Price range: "
         app:layout_constraintStart_toStartOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -100,8 +112,7 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-
+        android:layout_marginStart="42dp"
         android:text="$3,00 - $8,00"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
@@ -113,44 +124,71 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-
+        android:fontFamily="sans-serif"
+        android:textFontWeight="500"
+        android:textSize="20sp"
         android:text="Photogellery"
         android:textColor="@android:color/background_dark"
         app:layout_constraintStart_toStartOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="100dp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="120dp"
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:scaleType="fitXY"
+        app:cardCornerRadius="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:srcCompat="@drawable/museum" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toTopOf="@+id/imageView8"
-        app:srcCompat="@drawable/aquarium" />
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            app:srcCompat="@drawable/museum" />
+    </androidx.cardview.widget.CardView>
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="100dp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="120dp"
         android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="@+id/imageView9"
-        app:srcCompat="@drawable/artgallery" />
+        android:layout_marginStart="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/aquarium" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toEndOf="@+id/cardView3"
+        app:layout_constraintTop_toTopOf="@+id/cardView3">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/artgallery" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
 
     <ImageView
         android:id="@+id/imageView11"
@@ -182,26 +220,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
         android:text="About "
         android:textColor="@android:color/background_dark"
+        android:textFontWeight="500"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="374dp"
-        android:layout_height="188dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="378dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="8dp"
         android:text="Toronto, the capital of the province of Ontario, is a major Canadian city along Lake Ontario’s northwestern shore. It's a dynamic metropolis with a core of soaring skyscrapers, all dwarfed by the iconic, free-standing CN Tower. Toronto also has many green spaces, from the orderly oval of Queen’s Park to 400-acre High Park and its trails, sports facilities and zoo."
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="1.0" />
+        android:scrollbars="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

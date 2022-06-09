@@ -3,6 +3,7 @@ package com.example.holidayhipe;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -15,7 +16,7 @@ import com.example.holidayhipe.model.TopPlacesData;
 
 import java.util.ArrayList;
 
-public class DetailsActivity extends AppCompatActivity {
+public class DetailsActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ActivityDetailsBinding binding;
     private static final String TAG = "MainActivity";
@@ -28,6 +29,8 @@ public class DetailsActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_home);
         this.binding = ActivityDetailsBinding.inflate(getLayoutInflater());
         setContentView(this.binding.getRoot());
+
+        binding.imageView4.setOnClickListener(this::onClick);
 
         Intent currentIntent = this.getIntent();
 
@@ -43,9 +46,16 @@ public class DetailsActivity extends AppCompatActivity {
             this.binding.textView6.setText(placename);
             Log.d(TAG, "Data : "+ data);
         }
+    }
 
-
-
-
+    @Override
+    public void onClick(View v) {
+        if (v != null) {
+            switch (v.getId()) {
+                case R.id.imageView4: {
+                    finish();
+                }
+            }
+        }
     }
 }

@@ -3,17 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/myshape.xml" value="0.17276153564453134" />
         <entry key="app/src/main/res/drawable/rounded_corner_view.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/search_bg.xml" value="0.135" />
         <entry key="app/src/main/res/layout/activity_account.xml" value="0.29590911865234376" />
-        <entry key="app/src/main/res/layout/activity_details.xml" value="0.27751664002451043" />
+        <entry key="app/src/main/res/layout/activity_details.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.4119247436523438" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.2550399780273438" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.9436785264097329" />
         <entry key="app/src/main/res/layout/fragment_third.xml" value="0.2457888169370765" />
-        <entry key="app/src/main/res/layout/recents_row_item.xml" value="0.4373931884765625" />
-        <entry key="app/src/main/res/layout/top_places_row_item.xml" value="0.42551061657891764" />
+        <entry key="app/src/main/res/layout/recents_row_item.xml" value="0.5360452669803226" />
+        <entry key="app/src/main/res/layout/top_places_row_item.xml" value="0.4163816179547991" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.1" />
       </map>
     </option>
