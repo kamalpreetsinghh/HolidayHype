@@ -51,8 +51,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private void validateData() {
         boolean validData = true;
-        String email = this.binding.editTextEmail.getText().toString();
-        String password = this.binding.editTextPassword.getText().toString();
+        String email = this.binding.emailAddress.getText().toString();
+        String password = this.binding.password.getText().toString();
         if (email.isEmpty()) {
             this.binding.editTextEmail.setError("Email cannot be left empty");
             validData = false;

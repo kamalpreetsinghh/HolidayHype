@@ -41,12 +41,12 @@ public class SignUpActivity extends AppCompatActivity {
         boolean validData = true;
 
         User user = new User();
-        user.setFirstName(this.binding.editTextFirstName.getText().toString());
-        user.setLastName(this.binding.editTextLastName.getText().toString());
-        user.setEmail(this.binding.editTextSignupEmail.getText().toString());
-        user.setPassword(this.binding.editTextSignupPassword.getText().toString());
+        user.setFirstName(this.binding.firstName.getText().toString());
+        user.setLastName(this.binding.lastName.getText().toString());
+        user.setEmail(this.binding.emailAddress.getText().toString());
+        user.setPassword(this.binding.password.getText().toString());
 
-        EditText confirmPassword = this.binding.editTextSignupConfirmPassword;
+        EditText confirmPassword = this.binding.confirmPassword;
 
         if (user.getFirstName().isEmpty()) {
             this.binding.editTextFirstName.setError("First Name cannot be left empty");
