@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolidayHipe">
         <activity
+            android:name=".BookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShowAllPlaces"
+            android:exported="false" />
+        <activity
             android:name=".AccountActivity"
             android:exported="false" />
         <activity
@@ -24,13 +30,13 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".DetailsActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".DetailsActivity2"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

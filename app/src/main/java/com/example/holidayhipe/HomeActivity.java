@@ -13,13 +13,14 @@ import com.example.holidayhipe.model.TopPlacesData;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ActivityHomeBinding binding;
 
@@ -36,6 +37,8 @@ public class HomeActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_home);
         this.binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(this.binding.getRoot());
+
+        binding.textView4.setOnClickListener(this::onClick);
 
          ArrayList<RecentsData> recentDataList = new ArrayList<>();
         recentDataList.add(new RecentsData("Calgary", "Canada", "From $200", R.drawable.calgary));
@@ -97,5 +100,16 @@ public class HomeActivity extends AppCompatActivity {
         topPlacesAdapter = new TopPlacesAdapter(this, topPlacesDataList);
         topPlacesRecycler.setAdapter(topPlacesAdapter);
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v != null) {
+            switch (v.getId()) {
+                case R.id.textView4: {
+                    startActivity(new Intent(getApplicationContext(),ShowAllPlaces.class));
+                }
+            }
+        }
     }
 }
