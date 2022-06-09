@@ -24,6 +24,7 @@
             android:id="@+id/lastName"
             android:inputType="textPersonName"
             android:background="@color/white"
+            android:padding="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -62,6 +63,7 @@
             android:id="@+id/password"
             android:inputType="textPassword"
             android:background="@color/white"
+            android:padding="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -86,6 +88,7 @@
             android:id="@+id/firstName"
             android:inputType="textPersonName"
             android:background="@color/white"
+            android:padding="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -111,6 +114,7 @@
             android:id="@+id/emailAddress"
             android:inputType="textEmailAddress"
             android:background="@color/white"
+            android:padding="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -137,6 +141,7 @@
             android:id="@+id/confirmPassword"
             android:inputType="textPassword"
             android:background="@color/white"
+            android:padding="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
