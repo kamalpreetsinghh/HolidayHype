@@ -18,13 +18,12 @@
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextFirstName">
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirstName"
+        style="?attr/textInputFilledStyle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/lastName"
             android:inputType="textPersonName"
-            android:background="@color/white"
-            android:padding="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -57,13 +56,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignupEmail"
-        app:endIconMode="password_toggle">
+        app:endIconMode="password_toggle"
+        style="?attr/textInputFilledStyle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
             android:inputType="textPassword"
-            android:background="@color/white"
-            android:padding="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -82,13 +80,12 @@
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        style="?attr/textInputFilledStyle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/firstName"
             android:inputType="textPersonName"
-            android:background="@color/white"
-            android:padding="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -108,13 +105,12 @@
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLastName">
+        app:layout_constraintTop_toBottomOf="@+id/editTextLastName"
+        style="?attr/textInputFilledStyle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailAddress"
             android:inputType="textEmailAddress"
-            android:background="@color/white"
-            android:padding="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -135,13 +131,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextSignupPassword"
-        app:endIconMode="password_toggle">
+        app:endIconMode="password_toggle"
+        style="?attr/textInputFilledStyle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/confirmPassword"
             android:inputType="textPassword"
-            android:background="@color/white"
-            android:padding="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />

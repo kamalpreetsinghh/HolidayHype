@@ -17,13 +17,12 @@
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        style="?attr/textInputFilledStyle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailAddress"
             android:inputType="textEmailAddress"
-            android:background="@color/white"
-            android:padding="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -42,13 +41,12 @@
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        style="?attr/textInputFilledStyle"
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
             android:inputType="textPassword"
-            android:background="@color/white"
-            android:padding="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
