@@ -7,16 +7,20 @@
         <entry key="app/src/main/res/drawable/myshape.xml" value="0.17276153564453134" />
         <entry key="app/src/main/res/drawable/rounded_corner_view.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/search_bg.xml" value="0.135" />
+        <entry key="app/src/main/res/drawable/search_view_bg.xml" value="0.17" />
         <entry key="app/src/main/res/layout/activity_account.xml" value="0.29590911865234376" />
-        <entry key="app/src/main/res/layout/activity_booking.xml" value="0.21683807373046876" />
+        <entry key="app/src/main/res/layout/activity_booking.xml" value="0.20516052246093744" />
+        <entry key="app/src/main/res/layout/activity_booking2.xml" value="0.1816123188405797" />
         <entry key="app/src/main/res/layout/activity_details.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.4119247436523438" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2727630615234375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.21902534374292346" />
         <entry key="app/src/main/res/layout/activity_show_all_places.xml" value="0.21983100780542347" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.2550399780273438" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.9436785264097329" />
         <entry key="app/src/main/res/layout/fragment_third.xml" value="0.2457888169370765" />
         <entry key="app/src/main/res/layout/recents_row_item.xml" value="0.5360452669803226" />
+        <entry key="app/src/main/res/layout/search_row_item.xml" value="0.35271522411401723" />
         <entry key="app/src/main/res/layout/seeall_row_item.xml" value="0.23988112199945777" />
         <entry key="app/src/main/res/layout/top_places_row_item.xml" value="0.4163816179547991" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.1" />

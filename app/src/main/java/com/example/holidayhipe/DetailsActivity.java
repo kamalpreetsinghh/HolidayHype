@@ -30,8 +30,8 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
         this.binding = ActivityDetailsBinding.inflate(getLayoutInflater());
         setContentView(this.binding.getRoot());
 
-        binding.imageView4.setOnClickListener(this::onClick);
-        binding.button.setOnClickListener(this::onClick);
+        binding.goBack.setOnClickListener(this::onClick);
+        binding.startBookingTrip.setOnClickListener(this::onClick);
 
         Intent currentIntent = this.getIntent();
 
@@ -53,11 +53,13 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         if (v != null) {
             switch (v.getId()) {
-                case R.id.imageView4: {
+                case R.id.go_Back: {
                     finish();
+                    break;
                 }
-                case R.id.button: {
+                case R.id.startBookingTrip: {
                     startActivity(new Intent(getApplicationContext(),BookingActivity.class));
+                    break;
                 }
             }
         }

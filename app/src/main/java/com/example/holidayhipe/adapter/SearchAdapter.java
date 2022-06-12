@@ -12,19 +12,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-
 import com.example.holidayhipe.DetailsActivity;
 import com.example.holidayhipe.R;
-//import com.rajendra.vacationtourapp.DetailsActivity;
-//import com.rajendra.vacationtourapp.R;
-//import com.rajendra.vacationtourapp.model.RecentsData;
-
 import com.example.holidayhipe.model.RecentsData;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecentsAdapter extends RecyclerView.Adapter<RecentsAdapter.RecentsViewHolder> {
+public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.RecentsViewHolder> {
 
     Context context;
 
@@ -36,7 +31,7 @@ public class RecentsAdapter extends RecyclerView.Adapter<RecentsAdapter.RecentsV
     }
 
 
-    public RecentsAdapter(Context context, ArrayList<RecentsData> recentsDataList) {
+    public SearchAdapter(Context context, ArrayList<RecentsData> recentsDataList) {
         this.context = context;
         this.recentsDataList = recentsDataList;
     }
@@ -45,7 +40,7 @@ public class RecentsAdapter extends RecyclerView.Adapter<RecentsAdapter.RecentsV
     @Override
     public RecentsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(context).inflate(R.layout.recents_row_item, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.search_row_item, parent, false);
 
         // here we create a recyclerview row item layout file
         return new RecentsViewHolder(view);

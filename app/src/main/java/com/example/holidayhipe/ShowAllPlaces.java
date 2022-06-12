@@ -1,6 +1,7 @@
 package com.example.holidayhipe;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -49,8 +50,9 @@ public class ShowAllPlaces extends AppCompatActivity implements View.OnClickList
     private void setRecentRecycler(ArrayList<RecentsData> recentDataList) {
 
         recentRecycler = findViewById(R.id.recent_recycler_seeAll);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
-        recentRecycler.setLayoutManager(layoutManager);
+
+//        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
+        recentRecycler.setLayoutManager(new GridLayoutManager(this, 2));
         seeallAdapter = new SeeallAdapter(this, recentDataList);
         recentRecycler.setAdapter(seeallAdapter);
 
@@ -61,6 +63,7 @@ public class ShowAllPlaces extends AppCompatActivity implements View.OnClickList
             switch (v.getId()) {
                 case R.id.imageView4: {
                     finish();
+                    break;
                 }
             }
         }

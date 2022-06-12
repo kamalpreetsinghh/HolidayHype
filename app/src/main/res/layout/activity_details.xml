@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/bg" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/go_Back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -201,7 +201,7 @@
         app:srcCompat="@drawable/like" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/startBookingTrip"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"

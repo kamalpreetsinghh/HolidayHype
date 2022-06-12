@@ -39,6 +39,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(this.binding.getRoot());
 
         binding.textView4.setOnClickListener(this::onClick);
+        binding.searchImg.setOnClickListener(this::onClick);
 
          ArrayList<RecentsData> recentDataList = new ArrayList<>();
         recentDataList.add(new RecentsData("Calgary", "Canada", "From $200", R.drawable.calgary));
@@ -108,6 +109,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             switch (v.getId()) {
                 case R.id.textView4: {
                     startActivity(new Intent(getApplicationContext(),ShowAllPlaces.class));
+                    break;
+                }
+                case R.id.search_img: {
+                    startActivity(new Intent(getApplicationContext(),SearchActivity.class));
+                    break;
                 }
             }
         }
