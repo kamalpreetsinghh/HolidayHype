@@ -19,6 +19,8 @@ public class DetailsActivity2 extends AppCompatActivity implements View.OnClickL
 
     private ActivityDetailsBinding binding;
     private static final String TAG = "MainActivity";
+    private String placeName;
+    private String placeNameForIntent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +36,6 @@ public class DetailsActivity2 extends AppCompatActivity implements View.OnClickL
 
         Intent currentIntent = this.getIntent();
 
-
         ArrayList<TopPlacesData> TopPlaceData = currentIntent.getParcelableArrayListExtra("TopPlaceData");
 
         if(TopPlaceData.isEmpty()){
@@ -42,8 +43,10 @@ public class DetailsActivity2 extends AppCompatActivity implements View.OnClickL
             Log.d(TAG, "onCreate: Not Working");
         }else {
             this.binding.imageView3.setImageResource(TopPlaceData.get(0).getImageUrl());
-            String placename = TopPlaceData.get(0).getPlaceName() +", "+ TopPlaceData.get(0).getCountryName();
-            this.binding.textView6.setText(placename);
+
+            placeName = TopPlaceData.get(0).getPlaceName() +", "+ TopPlaceData.get(0).getCountryName();
+            placeNameForIntent = TopPlaceData.get(0).getCountryName();
+            this.binding.textView6.setText(placeName);
             Log.d(TAG, "Data : "+ TopPlaceData);
         }
 
@@ -59,7 +62,10 @@ public class DetailsActivity2 extends AppCompatActivity implements View.OnClickL
                     break;
                 }
                 case R.id.startBookingTrip: {
-                    startActivity(new Intent(getApplicationContext(),BookingActivity.class));
+                    Intent i = new Intent(this, BookingActivity.class);
+                    i.putExtra("destination",placeNameForIntent);
+                    startActivity(i);
+//                    startActivity(new Intent(getApplicationContext(),BookingActivity.class));
                     break;
                 }
             }

@@ -99,7 +99,7 @@
 
             <Spinner
                 android:id="@+id/spinnerFirstPlace"
-                android:layout_width="305dp"
+                android:layout_width="145dp"
                 android:layout_height="35dp"
                 android:layout_below="@+id/textView19"
                 android:layout_alignParentStart="true"
@@ -117,12 +117,12 @@
 
             <Spinner
                 android:id="@+id/spinnerSecondPlace"
-                android:layout_width="305dp"
+                android:layout_width="145dp"
                 android:layout_height="35dp"
                 android:layout_below="@+id/textView20"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp" />
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp" />
 
             <TextView
                 android:id="@+id/textView19"
@@ -131,7 +131,7 @@
                 android:layout_below="@+id/roundTrip"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="35dp"
                 android:fontFamily="sans-serif"
                 android:text="From"
                 android:textFontWeight="400"
@@ -141,10 +141,10 @@
                 android:id="@+id/textView20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinnerFirstPlace"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="25dp"
+                android:layout_below="@+id/oneWayTrip"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="130dp"
                 android:fontFamily="sans-serif"
                 android:text="To"
                 android:textFontWeight="400"
@@ -157,7 +157,7 @@
                 android:layout_below="@+id/spinnerSecondPlace"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="35dp"
                 android:fontFamily="sans-serif"
                 android:text="Departure"
                 android:textFontWeight="400"
@@ -170,7 +170,7 @@
                 android:layout_below="@+id/selectDate"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="35dp"
                 android:fontFamily="sans-serif"
                 android:text="Class"
                 android:textFontWeight="400"
@@ -182,7 +182,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/classSelect"
                 android:layout_marginStart="23dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="48dp"
                 android:layout_toEndOf="@+id/numberOfChild"
                 android:fontFamily="sans-serif"
                 android:text="Child"
@@ -195,7 +195,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/classSelect"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="48dp"
                 android:layout_marginEnd="25dp"
                 android:fontFamily="sans-serif"
                 android:text="Adult"
@@ -208,7 +208,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/spinnerSecondPlace"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="35dp"
                 android:layout_marginEnd="100dp"
                 android:fontFamily="sans-serif"
                 android:text="Return"
@@ -246,7 +246,7 @@
                 android:layout_below="@+id/classSelect"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="35dp"
                 android:theme="@style/NumberPickerText" />
 
             <NumberPicker
@@ -254,23 +254,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="58dp"
                 android:layout_below="@+id/classSelect"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="35dp"
                 android:layout_marginEnd="16dp"
-                android:theme="@style/NumberPickerText"
-                android:layout_toStartOf="@+id/textView40" />
+                android:layout_toStartOf="@+id/textView40"
+                android:theme="@style/NumberPickerText" />
 
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/searchFlightButton"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="40dp"
         android:background="@drawable/book_button_bg"
-        android:text="Search a flight"
+        android:text="Search flights"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -20,6 +20,9 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
 
     private ActivityDetailsBinding binding;
     private static final String TAG = "MainActivity";
+
+    private String placeName;
+    private String placeNameForIntent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,8 +46,9 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
             Log.d(TAG, "onCreate: Not Working");
         }else {
             this.binding.imageView3.setImageResource(data.get(0).getImageUrl());
-            String placename = data.get(0).getPlaceName() +", "+ data.get(0).getCountryName();
-            this.binding.textView6.setText(placename);
+            placeName = data.get(0).getPlaceName() +", "+ data.get(0).getCountryName();
+            placeNameForIntent = data.get(0).getPlaceName();
+            this.binding.textView6.setText(placeName);
             Log.d(TAG, "Data : "+ data);
         }
     }
@@ -58,7 +62,10 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
                     break;
                 }
                 case R.id.startBookingTrip: {
-                    startActivity(new Intent(getApplicationContext(),BookingActivity.class));
+                    Intent i = new Intent(this, BookingActivity.class);
+                    i.putExtra("destination",placeNameForIntent);
+                    startActivity(i);
+//                    startActivity(new Intent(getApplicationContext(),BookingActivity.class));
                     break;
                 }
             }

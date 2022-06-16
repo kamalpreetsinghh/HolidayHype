@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/card_bg"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#fafafa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="6dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/plane_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/travelling" />
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/bar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/departureTime"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="0dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/minus2" />
+
+            <TextView
+                android:id="@+id/firstPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif"
+                android:text="Toronto"
+                android:textFontWeight="500"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/departureTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstPlace"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:text="13:00"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/landingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondPlace"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="sans-serif"
+                android:text="13:00"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/secondPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="sans-serif"
+                android:text="Calgary"
+                android:textFontWeight="500"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/flightTime"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="70dp"
+                android:layout_toStartOf="@+id/secondPlace"
+                android:layout_toEndOf="@+id/firstPlace"
+                android:text="2 hr 30 min"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/flightType"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="74dp"
+                android:layout_marginEnd="150dp"
+                android:text="Non - Stop"
+                android:textAlignment="center"
+                android:textFontWeight="500"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/landingTime"
+                android:layout_toEndOf="@+id/departureTime"
+                android:text="-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/airplane"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/flightTime"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="100dp"
+                android:layout_toStartOf="@+id/landingTime"
+                android:layout_toEndOf="@+id/departureTime"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/airplane" />
+
+            <TextView
+                android:id="@+id/flightName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bar"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@+id/cardView2"
+                android:fontFamily="sans-serif"
+                android:text="Air Canada"
+                android:textFontWeight="500"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/flightFare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bar"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="19dp"
+                android:fontFamily="sans-serif"
+                android:text="$1200"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

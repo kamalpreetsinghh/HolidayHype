@@ -48,7 +48,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         recentDataList.add(new RecentsData("Toronto", "Canada", "From $300", R.drawable.toronto));
         recentDataList.add(new RecentsData("Vancouver", "Canada", "From $200", R.drawable.vancouver));
 
-
         setRecentRecycler(recentDataList);
 
         List<TopPlacesData> topPlacesDataList = new ArrayList<>();
