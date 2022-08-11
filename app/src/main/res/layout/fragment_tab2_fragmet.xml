@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:visibility="gone" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <com.fevziomurtekin.payview.Payview
+                android:id="@+id/payview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardAnimationType="horizontal"
+                app:cardBgColor="@color/colorRed"
+                app:cardCvErrorText="You must enter 3-digit characters"
+                app:cardCvTextSize="14"
+                app:cardExpiredErrorText="Your card has expired. Please enter the usage date correctly."
+                app:cardFgColor="@android:color/white"
+                app:cardMonthErrorText="You must enter 2-digit characters and you'll enter to number the most digit-value is '12'"
+                app:cardMonthTextSize="13"
+                app:cardNameHelperText="Enter to name on Your Card."
+                app:cardNameTextSize="15"
+                app:cardNoTextSize="14"
+                app:cardNumberHelperText="Enter your 16-digit card number."
+                app:cardTextColor="@color/purple_200"
+                app:cardYearErrorText="You must enter 2-digit characters and you'll enter to number the most digit-value is '99'"
+                app:cardYearTextSize="13" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

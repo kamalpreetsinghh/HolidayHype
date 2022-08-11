@@ -1,0 +1,279 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/layoutInvisible">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:id="@+id/layoutsrc">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageViewSrc"
+                android:scaleType="centerCrop"
+                android:background="@drawable/headerbackground"/>
+            <include layout="@layout/toolbar_hoteldetailed"
+                android:id="@+id/toolbar"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/layoutArrows"
+                android:layout_alignParentEnd="false"
+                android:layout_centerInParent="true">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewLeftArrow"
+
+                    android:src="@drawable/leftshortarrow"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewRightArrow"
+
+                    android:src="@drawable/rightshortarrow"
+                    android:layout_alignParentBottom="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutArrows"
+                android:layout_alignParentBottom="false"
+                android:layout_marginBottom="12dp"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                    <ImageView
+                        android:id="@+id/imageViewCircle"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignParentBottom="false"
+                        android:src="@drawable/circle_restaurant" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="false"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/imageViewCircle"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/textViewTitle"
+                        android:layout_alignLeft="@+id/textViewTitle"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentBottom="false"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imageViewTransportCar"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignBottom="@+id/textViewDistance"
+                    android:layout_toStartOf="@+id/textViewDistance"
+                    android:layout_toLeftOf="@+id/textViewDistance"
+                    android:src="@drawable/transport_car" />
+
+                <TextView
+                    android:id="@+id/textViewDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textViewType"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#ffffff" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutBottom"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/MiddleLinear"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/MiddleContact"
+                    android:background="@color/colorlightGray"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageViewContact"
+                        android:src="@drawable/phone_restaurant"
+                        android:layout_gravity="center"
+                        android:padding="5dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewContact"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:maxLines="1"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/MiddleVenue"
+                    android:background="@color/colorlightGray"
+                    android:layout_toRightOf="@+id/MiddleContact"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageViewVenue"
+                        android:src="@drawable/restaurant"
+                        android:layout_gravity="center"
+                        android:padding="5dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewType"
+                        android:textColor="#000000"
+                        android:layout_gravity="center" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_below="@+id/layoutBottom">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scrollViewDetailed"
+                    android:layout_gravity="center_horizontal"
+                    android:scrollbars="none">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewDescription"
+                    android:textColor="#000000"
+                    android:padding="5dp" />
+
+
+                </ScrollView>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FFF"
+        android:id="@+id/layoutInvisible"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FFF"
+        android:id="@+id/layoutMap"
+        android:visibility="gone"
+        android:layout_below="@+id/layoutBottom"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true">
+
+<!--        <fragment-->
+<!--            android:id="@+id/map"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            class="com.google.android.gms.maps.MapFragment" />-->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageViewmap"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/mapopenrestaurant"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageViewmapback"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/square"
+            android:visibility="gone" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

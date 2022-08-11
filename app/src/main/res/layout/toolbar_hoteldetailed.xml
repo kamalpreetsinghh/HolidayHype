@@ -1,0 +1,43 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/actionBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageViewBack"
+            android:src="@drawable/leftarrow"
+            android:layout_alignBottom="@+id/imageViewUpload"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_centerVertical="true"
+            android:padding="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/imageViewFavorite"
+            android:layout_toLeftOf="@+id/imageViewUpload"
+            android:src="@drawable/detailedfavorite"
+            android:layout_alignParentTop="false"
+            android:padding="5dp" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/imageViewUpload"
+            android:src="@drawable/upload"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

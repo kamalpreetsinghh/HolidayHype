@@ -7,4 +7,21 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorRed">#941624</color>
+    <color name="colorBrown">#a18b80</color>
+    <color name="myWindowBackground">#FFF</color>
+    <color name="colorGray">#dddce0</color>
+    <color name="light_grey_color">#9b9b9b</color>
+    <color name="colorLightRed">#f4e5e8</color>
+    <color name="dark_grey_color">#4a4a4a</color>
+    <color name="orange_tours">#f69a37</color>
+    <color name="stardard_background_color">#f4f4f4</color>
+    <color name="orange_tours_dark">#e58033</color>
+    <color name="lightest_grey_color">#cdd2d4</color>
+    <color name="orange_tours_disable">#96f69a37</color>
+    <color name="color_primary">#10c0bc</color>
+    <color name="lightest_grey_color_semitransparent">#80cdd2d4</color>
+    <color name="transparent">#00000000</color>
+    <color name="missions_purple">#a66ecc</color>
+    <color name="colorlightGray">#ddd5d2</color>
 </resources>

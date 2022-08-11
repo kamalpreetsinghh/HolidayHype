@@ -52,12 +52,12 @@
         android:id="@+id/place_name"
         android:layout_width="203dp"
         android:layout_height="28dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif"
         android:text="Toronto"
         android:textFontWeight="800"
         android:textSize="18sp"
-
+android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/cardView"
@@ -72,20 +72,9 @@
         android:text="Canada"
         android:textFontWeight="400"
         android:textSize="12dp"
+        android:paddingLeft="10dp"
         app:layout_constraintStart_toStartOf="@+id/place_name"
         app:layout_constraintTop_toBottomOf="@+id/place_name" />
-
-    <TextView
-        android:id="@+id/price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:text="From $200"
-        android:fontFamily="sans-serif"
-        android:textFontWeight="500"
-        android:textSize="12dp"
-        app:layout_constraintStart_toStartOf="@+id/country_name"
-        app:layout_constraintTop_toBottomOf="@+id/country_name" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

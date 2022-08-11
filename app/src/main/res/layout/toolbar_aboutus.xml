@@ -1,0 +1,63 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/actionBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp"
+    android:background="@color/colorRed">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageViewBack"
+            android:src="@drawable/menubar"
+            android:layout_alignBottom="@+id/imageViewUpload"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_centerVertical="true"
+            android:padding="15dp" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/imageViewAttraction"
+            android:src="@drawable/aboutus"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTitle"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:layout_below="@+id/imageViewAttraction"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="4dp" />
+</RelativeLayout>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageViewUpload"
+            android:src="@drawable/menubar"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

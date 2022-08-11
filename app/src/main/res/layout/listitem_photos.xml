@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginLeft="5dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/imageViewImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutBottom"
+        android:background="#55000000"
+        android:layout_alignBottom="@+id/imageViewImage"
+        android:padding="2dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textVIewTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:singleLine="true"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewphoto"
+            android:src="@drawable/photos_small"
+            android:layout_below="@+id/textVIewTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignLeft="@+id/textVIewTitle"
+            android:layout_alignTop="@+id/textViewCounter"
+            android:layout_alignBottom="@+id/textViewCounter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCounter"
+            android:layout_below="@+id/textVIewTitle"
+
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@+id/imageViewphoto"
+            android:layout_marginLeft="5dp"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

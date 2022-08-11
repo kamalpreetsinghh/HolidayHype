@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketInfoActivity">
+
+    <ImageView
+        android:id="@+id/go_backToAccount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="76dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/applogowithname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toEndOf="@+id/go_backToAccount2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bar">
+
+
+            <ImageView
+                android:id="@+id/ticketPic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="100dp"
+                android:src="@drawable/ticket" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Ticket"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="125dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Info"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/airport"
+                android:layout_alignBottom="@+id/landingPlane"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/dottedline"
+                app:tint="#a3a3a3" />
+
+            <ImageView
+                android:id="@+id/airport"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/ticketPic"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/airport" />
+
+            <ImageView
+                android:id="@+id/flyingPlane"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/airport"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/aeroplaneinair" />
+
+            <ImageView
+                android:id="@+id/landingPlane"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/flyingPlane"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/aeroplanelanding" />
+
+            <TextView
+                android:id="@+id/lb_firstPlaceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/airport"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/airport"
+                android:fontFamily="sans-serif"
+                android:text="Calgary"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/lb_totalTiming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/flyingPlane"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/flyingPlane"
+                android:fontFamily="sans-serif"
+                android:text="2hr 30min"
+                android:textAlignment="center"
+                android:textFontWeight="300"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/lb_firstSecondName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/landingPlane"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/landingPlane"
+                android:fontFamily="sans-serif"
+                android:text="Toronto"
+                android:textSize="16dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ticketPic"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginBottom="6dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/plane_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/travelling" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/lb_flightName"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/cardView2"
+                android:layout_alignStart="@+id/cardView2"
+                android:layout_alignEnd="@+id/cardView2"
+                android:layout_marginStart="-40dp"
+                android:layout_marginTop="2dp"
+                android:textAlignment="center"
+                android:layout_marginEnd="-40dp"
+                android:fontFamily="sans-serif"
+                android:text="Air Canada"
+                android:textFontWeight="500"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lb_departureDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/departureDate"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/departureDate"
+                android:fontFamily="sans-serif"
+                android:text="June 28, 2022"
+                android:textFontWeight="500"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/lb_landingDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/landingDate"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/departureDate"
+                android:fontFamily="sans-serif"
+                android:text="July 15, 2022"
+                android:textFontWeight="500"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lb_className"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/planeClass"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/departureDate"
+                android:fontFamily="sans-serif"
+                android:text="Business"
+                android:textFontWeight="500"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/landingPlane"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/minus2" />
+
+            <ImageView
+                android:id="@+id/separator2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/ticketPic"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/minus2" />
+
+            <ImageView
+                android:id="@+id/departureDate"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/separator"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/flyingdate" />
+
+            <ImageView
+                android:id="@+id/landingDate"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/departureDate"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/landingdate" />
+
+            <ImageView
+                android:id="@+id/planeClass"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/landingDate"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/planeclass" />
+
+            <ImageView
+                android:id="@+id/children"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/adults"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="80dp"
+                android:src="@drawable/children" />
+
+            <ImageView
+                android:id="@+id/adults"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/separator"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="80dp"
+                android:src="@drawable/adults" />
+
+            <TextView
+                android:id="@+id/lb_numberOfAdults"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/adults"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="sans-serif"
+                android:text="1"
+                android:textFontWeight="500"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lb_numberOfAdults2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/children"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="sans-serif"
+                android:text="0"
+                android:textFontWeight="500"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancel_Flight"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_border3"
+                android:drawableRight="@drawable/ic_baseline_delete_24"
+                android:drawablePadding="-20dp"
+                android:fontFamily="sans-serif"
+                android:text="Cancel flight"
+                android:paddingRight="5dp"
+                android:textColor="@color/purple_200"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

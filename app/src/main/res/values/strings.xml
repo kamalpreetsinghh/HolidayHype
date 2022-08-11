@@ -5,4 +5,93 @@
     <string name="First_fragment">FirstFragment</string>
     <string name="first_fragment">First Fragment</string>
     <string name="see_all">See all</string>
+    <string name="buttonLogin">Login</string>
+    <string name="buttonSignup">Sign Up</string>
+    <string name="hintLastName">Lastname</string>
+    <string name="hintFirstName">Firstname</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintPassword">password</string>
+    <string name="hintConfirmPassword">Confirm password</string>
+    <string name="buttonCreateAccount">Create Account</string>
+    <string name="UpdateInfo">Update Info</string>
+    <string name="UpdateProfile">Update profile</string>
+    <string name="app_logo">Holiday Hype</string>
+    <string name="bottom_nav_attractions"> </string>
+    <string name="bottom_nav_hotels"> </string>
+    <string name="bottom_nav_restaurants"> </string>
+    <string name="bottom_nav_profile"> </string>
+    <string name="attractions_fragment">Attractions fragment</string>
+    <string name="hotels_fragment">Hotels fragment</string>
+    <string name="restaurants_fragment">Restaurants fragment</string>
+    <string name="profile_fragment">Profile fragment</string>
+    <string name="textViewProfileName">Name</string>
+    <string name="textviewProfileEmail">Email</string>
+    <string name="buttonLogout">Logout</string>
+    <string name="profilePicture">Profile Picture</string>
+    <string name="loading">Please Wait...</string>
+    <string name="km">km</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="nodata">No Data Available...</string>
+    <string name="search">Type here to search</string>
+    <string name="city">City</string>
+    <string name="check_in">Check In</string>
+    <string name="check_out">Check Out</string>
+    <string name="guest">Guest</string>
+    <string name="learnmore">Learn More</string>
+    <string name="report">To report the problem and feedback</string>
+    <string name="emailus">PLEASE EMAIL US ON</string>
+    <string name="info">info@tourism.com</string>
+    <string name="IPadDestinationViewControllerTitle">Destination</string>
+    <string name="check_in_label">Check in &amp; Check out</string>
+    <string name="choose_city">Choose the city</string>
+    <string name="IPadHomeViewControllerSearchButton">Search</string>
+    <string name="newsave_headerButton_filter">Filtrar</string>
+    <string name="sort">Filter</string>
+    <string name="guests">Guests</string>
+    <string name="map">Map</string>
+    <string name="hotels_pagination">View 15 more</string>
+    <string name="powered_by">Powered by</string>
+    <string name="hotel_no_results_title">What a combination of filters!</string>
+    <string name="hotel_no_results_subtitle">But we can\'t find anything with these features for those dates</string>
+    <string name="hotel_no_results_restore_filters">Erase filters</string>
+    <string name="hotel_availability_title">Oops, it seems there are no rooms available</string>
+    <string name="hotel_availability_subtitle">Change your dates or choose another destination...</string>
+    <string name="copylink">Copy link</string>
+    <string name="close">Close</string>
+    <string name="desc"><![CDATA[Sleek eatery offering fixed-price & chef\'s menus of thoughtfully sourced New Canadian fare & drinks A restaurant is a business that prepares and serves food and drinks to customers. Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services.]]></string>
+    <string name="res_title">Actinolite Restaurant</string>
+    <string name="bahrainphotos">Canada Photos</string>
+    <string name="photos">Photos</string>
+    <string name="action_settings">Settings</string>
+    <string name="favorite">Favorite</string>
+    <string name="visit_website">VISIT WEBSITE</string>
+    <string name="lets_book_your_room">Lets book your room</string>
+    <string name="price">Price</string>
+    <string name="room_title">Room Title</string>
+    <string name="start_date">Start Date</string>
+    <string name="enter_nights">Enter Nights</string>
+    <string name="book">Book</string>
+    <string name="not_found">Not found !</string>
+    <string name="similar">Similar</string>
+    <string name="view_all">View All</string>
+    <string name="title">Title</string>
+    <string name="total_payment">Total Payment</string>
+    <string name="page_title">Page Title</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="guest_name_is_same_with_full_name">Guest Name is same with full name</string>
+    <string name="booking_successfull">Booking Successfull</string>
+    <string name="no_of_rooms">No. of Rooms</string>
+    <string name="aboutcanada">Welcome to the most exciting Tourist attractions and Travel Destinations in Canada. Each Province/Region of Canada offers different places of interest and types of Attractions.
+        <!--        Canada is one of the world's highly developed countries with a diversified economy that is reliant upon its abundant natural resources.-->
+        <!--    \n\n<b>Visitors to Canada</b>-->
+        <!--    \nVisitors to Canada including US citizens must carry a valid passport. Citizens from the Countries other than the US, Kingdom, France, Germany, Mexico, Japan, the Republic of Korea, Australia may also require a visa to enter Canada.-->
+        <!--    \n\n<b>Canadian Currency</b>-->
+        <!--    \nThe Canadian dollar (CAD) is the currency of Canada. It is abbreviated with the dollar sign $, or C$ to distinguish it from other dollar-denominated currencies.[3] It is divided into 100 cents.-->
+        <!--    \n\n<b>What not to Bring</b>-->
+        <!--    \nNon-Canadian citizens may bring a non-restricted firearm such as a hunting rifle or shotgun if it is being used for in-season hunting, competition purposes, in-transit movement or as protection against wildlife in remote areas of Canada.-->
+        <!--    \n\n<b>Why Canada</b>-->
+        <!--    \nCanada offers a broad range of cultural and geographical features. The mighty Rocky Mountains and powerful pacific tides meet with vibrant communities in British Columbia, while urban flair mixes with cowboy culture in Alberta. Rural living comes alive under endless skies in Saskatchewan and Manitoba, while Ontario offers a diverse mix of big-city sophistication and relaxed country living.-->
+</string>
 </resources>

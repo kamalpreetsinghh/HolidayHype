@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AccountActivity">
+    tools:context="com.gbc.holidayhype.AccountActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -21,13 +21,13 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="123dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+        app:srcCompat="@drawable/profilepic" />
 
     <TextView
         android:id="@+id/textView15"
@@ -41,60 +41,81 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button2"
         android:layout_width="308dp"
         android:layout_height="50dp"
         android:layout_marginTop="38dp"
-        android:text="Essential Info"
+        android:text="User Info"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="400"
+        android:background="@drawable/account_btn_shape"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button3"
         android:layout_width="308dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
-        android:text="Show favorites"
+        android:text="Update profile"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="400"
+        android:background="@drawable/account_btn_shape"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button4"
         android:layout_width="308dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
-        android:text="Setting"
+        android:text="Flights Ticket"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="400"
+        android:background="@drawable/account_btn_shape"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
-    <Button
-        android:id="@+id/button5"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button6"
         android:layout_width="308dp"
         android:layout_height="50dp"
+        android:background="@drawable/account_btn_shape"
+        android:fontFamily="sans-serif"
         android:layout_marginTop="30dp"
-        android:text="FAQ and Contact info"
+        android:text="About HolidayHype"
+        android:textFontWeight="400"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
-    <Button
-        android:id="@+id/button6"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logOut"
         android:layout_width="308dp"
         android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:text="About canada"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/account_btn_shape"
+        android:fontFamily="sans-serif"
+        android:text="Logout"
+        android:textFontWeight="700"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+         />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"

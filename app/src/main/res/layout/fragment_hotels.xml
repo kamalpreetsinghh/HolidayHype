@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRed">
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/imageViewUpload"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/leftarrow" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/imageViewAttraction"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/aboutus" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewAttraction"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="4dp"
+                android:text="Hotels"
+                android:textColor="#ffffff"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageViewBooking"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/menubar" />
+
+
+    </RelativeLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/white">
+
+        <!--    <androidx.appcompat.widget.Toolbar-->
+        <!--        android:id="@+id/toolbar"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="?attr/actionBarSize"-->
+        <!--        android:background="@color/white"-->
+        <!--        android:fitsSystemWindows="false"-->
+        <!--        android:minHeight="?attr/actionBarSize"-->
+        <!--        android:theme="@style/Theme.Minube.Eagle.WhiteStatusBar"-->
+        <!--        app:navigationIcon="@drawable/back_navbar"-->
+        <!--        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/rootView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/searchHeader"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <include
+                        layout="@layout/destination_section_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:id="@+id/searchLayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/header"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/destinationButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/lightest_grey_border">
+
+                            <TextView
+                                android:id="@+id/destinationButtonTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/IPadDestinationViewControllerTitle"
+                                android:textColor="@color/light_grey_color"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/destinationButtonName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/destinationButtonTitle"
+                                android:layout_marginLeft="8dp"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:textColor="@color/dark_grey_color"
+                                android:textSize="14dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/dateButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/lightest_grey_border">
+
+                            <TextView
+                                android:id="@+id/dateTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/check_in_label"
+                                android:textColor="@color/light_grey_color"
+                                android:textSize="12dp" />
+
+                            <LinearLayout
+                                android:id="@+id/dateValues"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/dateTitle"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/checkInText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/dark_grey_color"
+                                    android:text="@string/app_name"
+                                    android:textSize="14dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:src="@drawable/date_separator" />
+
+                                <TextView
+                                    android:id="@+id/checkOutText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="8dp"
+                                    android:textColor="@color/dark_grey_color"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/searchButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/searchLayer"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/orange_tours_button"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:text="@string/IPadHomeViewControllerSearchButton"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchButton"
+                        android:layout_marginTop="10dp"
+                        android:clipToPadding="false">
+
+                        <ProgressBar
+                            android:id="@+id/searchProgress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/dark_grey_color"
+                            android:indeterminate="true"
+                            android:indeterminateDrawable="@drawable/meta_search_progress"
+                            android:max="100"
+                            android:progress="0"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/optionsArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:id="@+id/filterButton"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="16dp"
+                                    android:src="@drawable/ic_filter" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|center_horizontal"
+                                    android:layout_marginBottom="18dp">
+
+                                    <TextView
+                                        android:id="@+id/filterButtontitle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginTop="7dp"
+                                        android:text="@string/newsave_headerButton_filter"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/dark_grey_color"
+                                        android:textSize="11dp" />
+
+                                    <View
+                                        android:id="@+id/filtersCount"
+                                        android:layout_width="4dp"
+                                        android:layout_height="4dp"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_toRightOf="@+id/filterButtontitle"
+                                        android:background="@drawable/m_circle_shape_orange"
+                                        android:textAllCaps="true"
+                                        android:visibility="gone" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/stardard_background_color" />
+
+                            <LinearLayout
+                                android:id="@+id/sortButton"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="16dp"
+                                    android:src="@drawable/ic_order" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|center_horizontal"
+                                    android:layout_marginBottom="17dp">
+
+                                    <TextView
+                                        android:id="@+id/sortButtonTitle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginTop="12dp"
+                                        android:text="@string/sort"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/dark_grey_color"
+                                        android:textSize="11dp" />
+
+                                    <View
+                                        android:id="@+id/sortsCounter"
+                                        android:layout_width="4dp"
+                                        android:layout_height="4dp"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_toRightOf="@+id/sortButtonTitle"
+                                        android:background="@drawable/m_circle_shape_orange"
+                                        android:textAllCaps="true"
+                                        android:visibility="gone" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/stardard_background_color" />
+
+                            <LinearLayout
+                                android:id="@+id/guestsButton"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="16dp"
+                                    android:src="@drawable/ic_huesped" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginBottom="19dp">
+
+                                    <TextView
+                                        android:id="@+id/guestsButtonTitle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginTop="6dp"
+                                        android:text="@string/guests"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/dark_grey_color"
+                                        android:textSize="11dp" />
+
+                                    <View
+                                        android:id="@+id/guestsCount"
+                                        android:layout_width="4dp"
+                                        android:layout_height="4dp"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_marginTop="4dp"
+                                        android:layout_toRightOf="@+id/guestsButtonTitle"
+                                        android:background="@drawable/m_circle_shape_orange"
+                                        android:textAllCaps="true"
+                                        android:visibility="visible" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/stardard_background_color" />
+
+                            <RelativeLayout
+                                android:id="@+id/mapButton"
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="16dp"
+                                    android:src="@drawable/ic_map_hotel_meta" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="34dp"
+                                    android:text="@string/map"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/dark_grey_color"
+                                    android:textSize="11dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/optionsAreaShadow"
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:layout_below="@+id/optionsArea"
+                            android:background="@drawable/shadow"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <include
+                    android:id="@+id/footer"
+                    layout="@layout/search_hotels_footer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100dp"
+                    android:visibility="gone" />
+
+                <include
+                    layout="@layout/no_availability"
+                    android:visibility="gone" />
+
+                <include
+                    layout="@layout/no_results"
+                    android:visibility="gone" />
+
+                <include
+                    layout="@layout/hotels_load_list"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:visibility="gone" />
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toolbar"
+                    android:id="@+id/laySearch"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+
+                        android:id="@+id/editTextSearch"
+                        android:textColorHint="@color/colorGray"
+                        android:background="@drawable/round_searchbox"
+
+                        android:hint="@string/search"
+                        android:padding="8dp"
+                        android:textColor="@color/colorGray"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_toLeftOf="@+id/imageViewFilter"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/imageViewFilter"
+                        android:src="@drawable/red_filter"
+
+                        android:layout_alignParentBottom="false"
+                        android:layout_alignParentRight="true"
+                        android:focusableInTouchMode="false"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignWithParentIfMissing="false"
+                        />
+
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingBottom="16dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewNoData"
+                    android:text="@string/nodata"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/laySearch"
+                    android:visibility="gone" />
+                <RelativeLayout
+                    android:id="@+id/paginationButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/paginationText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/hotels_pagination"
+                        android:textColor="@color/color_primary"
+                        android:textSize="16dp" />
+
+                    <ProgressBar
+                        android:id="@+id/paginationProgress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rivers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
